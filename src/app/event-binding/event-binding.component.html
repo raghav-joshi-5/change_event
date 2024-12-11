@@ -1,21 +1,81 @@
-<!-- <input type="text" (keyup)="onkeyupCb($event)" class="form-control" />
+<h1>Event binding</h1>
+<p>binding keyup event on input control result in console</p>
+<input type="text" (keyup)="onkeyupCb($event)" class="form-control" />
 <hr />
+<p>binding keyup event on button result in console</p>
 <input type="text" class="form-control" #productName />
 <hr />
 <button (click)="onbtnclick(productName)" class="btn-sm btn-primary">
   Get Product Name
-</button> -->
-
-<input type="text" class="form-control" />
+</button>
 <hr />
+<hr />
+<p>binding event on button to increment and decrement the value</p>
 <button (click)="onBtnadd()" class="btn btn-sm btn-primary mr-3">
   add Product
 </button>
 <button (click)="onBtnremove()" class="btn btn-sm btn-danger mr-3">
   remove Product
 </button>
-
 <hr />
+<p>you can add 5 product</p>
 <p class="alert alert-info">
   {{ productaddstatus }}
 </p>
+<hr />
+<hr />
+<hr />
+<p>list items from ts file to template</p>
+<ul class="list-group city-list">
+  <li *ngFor="let city of cityArr; let i = index" class="list-group-item mb-2">
+    {{ i + 1 }}. The city <strong> {{ city }} </strong>is globally renowned
+    metropolises, each serving as cultural, economic, or political hubs in their
+    respective regions.
+  </li>
+</ul>
+<hr />
+<hr />
+<hr />
+<p>creating the table from ts file to template</p>
+
+<div class="col-12">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Country</th>
+      <th>Occupation</th>
+      <th>Salary</th>
+      <th>Married</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of persionObj; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ data.name }}</td>
+        <td>{{ data.age }}</td>
+        <td>{{ data.gender }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.phone }}</td>
+        <td>{{ data.address }}</td>
+        <td>{{ data.city }}</td>
+        <td>{{ data.state }}</td>
+        <td>{{ data.zip }}</td>
+        <td>{{ data.country }}</td>
+        <td>{{ data.occupation }}</td>
+        <td>{{ data.salary }}</td>
+        <td>{{ data.married }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr />
+<hr />
+<hr />
