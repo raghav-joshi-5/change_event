@@ -1,0 +1,21 @@
+<!-- <input type="text" (keyup)="onkeyupCb($event)" class="form-control" />
+<hr />
+<input type="text" class="form-control" #productName />
+<hr />
+<button (click)="onbtnclick(productName)" class="btn-sm btn-primary">
+  Get Product Name
+</button> -->
+
+<input type="text" class="form-control" />
+<hr />
+<button (click)="onBtnadd()" class="btn btn-sm btn-primary mr-3">
+  add Product
+</button>
+<button (click)="onBtnremove()" class="btn btn-sm btn-danger mr-3">
+  remove Product
+</button>
+
+<hr />
+<p class="alert alert-info">
+  {{ productaddstatus }}
+</p>
