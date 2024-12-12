@@ -1,0 +1,31 @@
+<h2>Table of product</h2>
+<div class="row">
+  <table class="table table-bordered">
+    <thead class="table-danger">
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>category</th>
+      <th>price</th>
+      <th>stock</th>
+      <th>rating</th>
+      <th>brand</th>
+      <th>description</th>
+      <th>color</th>
+      <th>value</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of products">
+        <td class="bg-primary">{{ data.id }}</td>
+        <td class="bg-success">{{ data.name }}</td>
+        <td class="bg-warning">{{ data.category }}</td>
+        <td class="bg-primary">{{ data.price }}</td>
+        <td class="bg-success">{{ data.stock }}</td>
+        <td class="bg-warning">{{ data.rating }}</td>
+        <td class="bg-primary">{{ data.brand }}</td>
+        <td class="bg-warning">{{ data.description }}</td>
+        <td class="bg-success">{{ data.color }}</td>
+        <td class="bg-info">{{ data.value }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

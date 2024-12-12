@@ -1,0 +1,38 @@
+<h2>hide show div using event</h2>
+<button
+  (click)="onShowBtn(box)"
+  class="btn btn-sm btn-success text-white p-2 m-2 text-capitalize"
+>
+  Show
+</button>
+
+<button
+  (click)="onHideBtn(box)"
+  class="btn btn-sm btn-danger text-white p-2 m-2 text-capitalize"
+>
+  Hide
+</button>
+
+<button
+  (click)="onToggleBtn(box)"
+  class="btn btn-sm btn-info text-white p-2 m-2 text-capitalize"
+>
+  Hide-Show
+</button>
+
+<button
+  (click)="onHideShowBtn(box, $event)"
+  class="btn btn-sm btn-dark text-white p-2 m-2 text-capitalize"
+>
+  Hide-Show
+</button>
+
+<div #box class="mb-3 d-none box"></div>
+
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />

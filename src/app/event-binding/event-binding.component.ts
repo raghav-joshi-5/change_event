@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Person } from 'src/model/event_binding_interface';
 
 @Component({
   selector: 'app-event-binding',
@@ -43,7 +44,7 @@ export class EventBindingComponent {
     'Moscow',
   ];
 
-  persionObj = [
+  persionObj: Array<Person> = [
     {
       id: 1,
       name: 'Alice Johnson',
